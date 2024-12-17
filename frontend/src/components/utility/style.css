@@ -1,0 +1,58 @@
+.nav-item{
+    @apply rounded-full h-[40px] w-[40px] text-sm flexa  hover:text-white hover:bg-cust-blue/80
+}
+.flexa{
+    @apply flex justify-center items-center grid
+}
+/* The switch - the box around the slider */
+.switch { @apply relative inline-block w-[100px];
+    position: relative;
+    display: inline-block;
+    /* width: 60px; */
+    height: 34px;
+  }
+  .switch input { @apply opacity-0 w-0 h-0}
+  
+  /* The slider */
+  .slider2 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider2:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(65px);
+  }
+  
+  /* Rounded sliders */
+  .slider2 {
+    border-radius: 34px;
+  }
+  
+  .slider2:before {
+    border-radius: 50%;
+  }
+.study .h1{
+  @apply mx-2 ml-3 text-4xl
+}
+.study img{
+  @apply w-[300px] mx-auto
+}

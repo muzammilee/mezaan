@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  @apply font-sans
+}
+.flexo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flexa{
+  @apply flex items-center justify-center
+}
+.nadu{
+  transform: translateX(-50%) translateY(-50%);
+}
+.white{
+  color: rgb(255, 255, 255)
+}
+.calc input ::placeholder{
+   font-size: xx-small;
+}
+.calc input {
+  @apply border-opacity-40 w-full rounded-md text-base outline-none py-1 border text-slate-500/90;
+}
+
+.calc label{
+  @apply text-sm font-semibold transition-transform;
+}
+.transform {
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(0);
+}
+
+.transform.active {
+  transform: translate(700px);
+}
+h1{
+  @apply text-[28px] font-[535] my-7;
+}
+.slider{
+ @apply outline-none rounded-2xl appearance-none bg-transparent
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* box-shadow: -607px 0 0 600px rgb(16 185 129/0.7); */
+  @apply appearance-none w-[19px] h-[19px] bg-cust-cream rounded-2xl border-2 -mt-3.5  shadow;
+}
+
+.slider::-webkit-slider-runnable-track{
+  /* -webkit-appearance: none; */
+  @apply h-full rounded-2xl z-10 bg-cust-blue;
+}
+
+.EMIController h3 input{
+  @apply text-end bg-transparent;
+}
+.slider input{
+  outline: none;
+  border-style: none;
+}
+.test{
+  @apply rounded-2xl dark:text-white/95
+}
+.bg {
+  @apply bg-white rounded-2xl;
+}
+
+.swalTitle{
+  @apply text-rose-600 text-5xl;
+}
+.swalContainer{
+  @apply bg-rose-500/40 text-center text-xl;
+}
+.swalActions{
+  @apply inline-flex gap-3 items-center justify-center;
+}
+/* Flex container for the buttons */
+.swal2-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+.swal2-confirm, .swal2-cancel {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+
+.swal2-confirm {
+  background-color: #007bff; /* Blue color */
+  color: white;
+}
+
+
+.swal2-cancel {
+  background-color: #f44336; /* Red color */
+  color: white;
+}
+.bg1::before{
+  background-position-y:80px;
+}
+.scroll::-webkit-scrollbar { @apply w-1}
+.scroll::-webkit-scrollbar-track { @apply bg-cust-cream}
+.scroll::-webkit-scrollbar-thumb {@apply h-1 bg-cust-blue/50 hover:bg-gray-600/90 rounded-3xl focus:bg-red-400}
+
+@keyframes fade {
+  0%{translate: -150%;}
+  66%{translate: 19%;}
+  100%{translate:0%}
+}
+.hi{
+  animation: fade 2s ease-in-out;
+  /* translate: -150%; */
+}
+*{
+  box-sizing: border-box;
+}
