@@ -3,6 +3,7 @@ import masjid from "../../images/masjid.png"
 import { Link } from 'react-router-dom'
 import Switcher from '../utility/ToggleMode'
 import axios from 'axios'
+import logo from "../../svgs/logo.svg"
 
 
 
@@ -33,8 +34,8 @@ export default memo( function Home() {
 
         {/* NAV BAR  */}
         <nav className="h-20 w-full bg-cust-blue/95 px-10 flex items-center md:gap-5">
-          <span className="px-4 py-3 bg-white text-cust-blue font-black rounded-2xl">logo</span>
-          <h1>Name</h1>
+          <img src={logo} className='h-14' alt="" />
+          <h1>meezan</h1>
           <div className='ml-auto flex gap-4 '><Switcher size="text-2xl" /><img src="" alt="" className="rounded-full w-[50px] h-[50PX] bg-white" /></div>
         </nav>
      
